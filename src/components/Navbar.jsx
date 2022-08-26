@@ -2,13 +2,18 @@ import '../styles/App.css';
 
 function Navbar() {
   return (
-    <div>
-      <h1>Bienvenido! </h1>
-        <ul className="menu">
-          <li className="items">Home</li>
-          <li className="items">Services</li>
-          <li className="items">Contact</li>
+    <div className="menu">
+        <div className='bienvenido'>
+        <h1>Bienvenido! </h1>
+        </div>
+
+        <div className='items'>
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>Contact</li>
         </ul>
+        </div>
     </div>
     
   );

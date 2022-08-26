@@ -1,13 +1,21 @@
+body {
+    width: 100%;
+    background: url(../images/blanco.png), url(../images/test.svg), #9a3ca7;
+    background-size:auto,100vw,100vw,auto;
+    background-repeat: no-repeat;
+    background-position: center center, top right, center;
+}
 .menu {
+    background-color: blue;
+    grid-template-columns: 50% ,50%;
     list-style-type: none;
-    
-    
     display: flex;
 
 }
 
-.items {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+.menu li{
+    background-color: aqua;
+    display: inline;
+    grid: 30%;
+    
 }
