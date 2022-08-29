@@ -1,21 +1,50 @@
 body {
-    width: 100%;
-    background: url(../images/blanco.png), url(../images/test.svg), #9a3ca7;
-    background-size:auto,100vw,100vw,auto;
-    background-repeat: no-repeat;
-    background-position: center center, top right, center;
+    max-width: 100%;
+    max-height: 100%;
+    background: url(../images/carina.jpg);
+    background-size:100%,100%,100%,100%;
+    z-index: 0;
 }
-.menu {
-    background-color: blue;
-    grid-template-columns: 50% ,50%;
-    list-style-type: none;
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.saludo {
     display: flex;
 
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    font-size: 1em;
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar-container ul{ 
+    
+    list-style-type: none;
+    position: fixed;
+   
+    display: flex;
+    list-style: none;
+    text-align: center;
+
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
-.menu li{
+li {
+    padding: 1em;
     background-color: aqua;
     display: inline;
-    grid: 30%;
-    
+    opacity: 70%;
+    z-index: 1;
+}
+
+li:hover {
+    background-color: rgb(150, 35, 134);
+    transition: background-color 3s ease;
 }
