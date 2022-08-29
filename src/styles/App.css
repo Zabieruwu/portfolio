@@ -13,13 +13,16 @@ body {
 
 .saludo {
     display: flex;
+    background-color:hwb(hue white black);
+    
 
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-column-end: 4;
 
+    
     font-size: 1em;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
 }
 .navbar-container ul{ 
     
@@ -34,17 +37,23 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+
+    justify-content: center;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 li {
     padding: 1em;
     background-color: aqua;
     display: inline;
-    opacity: 70%;
+    background: rgba(0, 255, 255, .4) ;
     z-index: 1;
 }
 
 li:hover {
-    background-color: rgb(150, 35, 134);
+    background-color:transparent;
     transition: background-color 3s ease;
 }
