@@ -1,59 +1,97 @@
+
 body {
     max-width: 100%;
     max-height: 100%;
     background: url(../images/carina.jpg);
-    background-size:100%,100%,100%,100%;
+    background-size:cover;
     z-index: 0;
+    grid-auto-columns: auto ,auto,auto;
+    
 }
 
+/* 
+    COMPONENTE NAVBAR
+*/
 .navbar-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: grid; 
+    grid-column: 1 / 1;
 }
 
 .saludo {
-    display: flex;
-    background-color:hwb(hue white black);
+    display: grid;
     
 
-    grid-column-start: 1;
-    grid-column-end: 4;
 
     
     font-size: 1em;
-    width: 100%;
     justify-content: center;
 }
 .navbar-container ul{ 
     
     list-style-type: none;
-    position: fixed;
    
     display: flex;
     list-style: none;
     text-align: center;
 
     font-size: 1em;
-    margin: 0;
+    margin: auto;
     padding: 0;
     width: 100%;
 
     justify-content: center;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
+   
 }
 
-li {
+
+button {
+
     padding: 1em;
     background-color: aqua;
     display: inline;
     background: rgba(0, 255, 255, .4) ;
     z-index: 1;
+    border: none;
+    
+   
 }
 
-li:hover {
+button:hover {
+    background-color:transparent;
+    transition: background-color .3s ease;
+}
+
+/* 
+    COMPONENTE CONTACTO
+*/
+
+.container-contacto {
+    
+    display: grid;
+
+    padding: 1em;
+    grid-row-start: 1;
+}
+
+.fondo {
+background-color: azure;
+    display: grid;    
+    background-color:transparent;
+    background: rgba(0, 255, 255, .4) ;
+
+    justify-content: space-evenly;
+    
+    
+}
+.fondo:hover{
     background-color:transparent;
     transition: background-color 3s ease;
 }
+
+
+.web{
+    color: white;
+
+
+}
+
